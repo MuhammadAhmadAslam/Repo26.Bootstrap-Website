@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     font-family: 'roboto';
+
 }
 @font-face {
     font-family: 'roboto';
     src: url(fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
 }
+
 .main{
     background: url(images/bg_1.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
 }
 #header{
     font-size: 100%;
@@ -100,4 +102,202 @@ i{
 }
 #logo{
     color: black;
+}
+#header-heading{
+    width: 480px;
+    margin-top: 100px;
+    font-size: 45pt;
+    font-weight: bolder;
+    margin-left: 100px;
+}
+#header-heading6{
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 40%;
+    line-height: 30px;
+}
+.button1{
+    width: 190px;
+    height: 50px;
+    background-color: #FD4C82;
+    color: white;
+    margin-left: 100px;
+    margin-top: 40px;
+    border: none;
+}
+.abc{
+    position: relative;
+}
+.header-card{
+    display: flex;
+    justify-content: space-between;
+}
+.card-1{
+    display: flex;
+    position: absolute;
+    bottom: -90px;
+    left: 20px;
+    background-color: white;
+}
+.img{
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    width: 25%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.img img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.title h3{
+    margin-top: 40px;
+    color: black;
+    margin-left: 10px;
+}
+.title h6{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.card-2{
+    display: flex;
+    position: absolute;
+    bottom: -90px;
+    left: 470px;
+    background-color: white;
+}
+.card-3{
+    display: flex;
+    position: absolute;
+    bottom: -90px;
+    right: 40px;
+    background-color: white;
+}
+.card-1:hover{
+    background-color: #FD4C82;
+}
+.card-2:hover{
+    background-color: #FD4C82;
+}
+.card-3:hover{
+    background-color: #FD4C82;
+}
+.main3{
+    margin-top: 190px;
+    width: 100%;
+    display: flex;
+}
+.main3-1{
+    width: 40%;
+    height: 900px;
+}
+.main3-1 img{
+    width: 100%;
+    padding-top: 50px;
+    height: 70%;
+}
+.main3-2{
+    width: 50%;
+    padding-left: 90px;
+    padding-top: 70px;
+}
+.main3-2 h5{
+    color: #FD4C82;
+}
+.main3-2 p{
+    padding-top: 40px;
+    line-height: 30px;
+}
+.ul-1{
+    display: flex;
+    margin-top: 20px;
+}
+.ul-1-img{
+    background-color: #FD4C82;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.ul-1 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.ul-1 h4{
+    padding-top: 15px;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+    .card-2{
+        display: none;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 700px) {
+    .card-1{
+        display: none;
+    }
+    .card-2{
+        border: 1px solid black !important;
+        margin-top: 40px;
+    }
+    .main{
+        background: url(images/modify.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 120vh;
+    }
+    #header-heading{
+        margin-left: 20px;
+        font-size: 150%;
+        width: 80%;
+    }
+    #header-heading6{
+        margin-left: 20px;
+        width: 70%;
+    }
+    .button1{
+        margin-left: 20px;
+    }
+    #main{
+        background-size: contain;
+    }
+    .head{
+        display: none;
+    }
+    .main3-1{
+        display: none;
+    }
+    .main3-2{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+    }
 }
