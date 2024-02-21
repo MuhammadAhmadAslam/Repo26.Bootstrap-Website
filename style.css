@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: 'roboto';
 
 }
@@ -254,9 +254,99 @@ input[type="date"]:before {
   input[type="date"]:valid:before {
     content: "";
   }
+#input1{
+    width: 260px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+}  
+#input2{
+    width: 260px;
+    height: 50px;
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+select{
+    width: 220px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 16px; 
+    margin-bottom: 20px;
+}  
+
+#input3{
+    width: 260px;
+    height: 50px;
+    margin-top: 20px;
+    /* margin-right: 16px; */
+    /* margin-left: 16px; */
+} 
+#input4{
+    width: 260px;
+    height: 50px;
+} 
+input::placeholder{
+    color: black;
+    font-weight: bolder;
+
+}
+#input4::placeholder{
+    color: black;
+    font-weight: bolder !important;
+}
+select::placeholder{
+    color: black;
+    font-weight: bolder;
+}
+textarea::placeholder{
+    color: black;
+    font-weight: bolder;
+}
+#button2{
+    width: 200px;
+    height: 40px;
+    background-color: #FD4C82;
+    color: white;
+    font-size: large;
+    border: none;
+}
+.main4 h1{
+    color: #FD4C82;
+    margin-top: 100px;
+    font-size: medium;
+}
+.groomers-card{
+    width: 100%;
+}
+.cards-1{
+    width: 20%;
+    position: relative;
+    height: 270px;
+}
+.images-div{
+    width: 50px;
+    height: 100px;
+}
+.images-div img{
+    width: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+.info{
+    padding-top: 50px;
+}
+.info:hover{
+    background-color: yellow;
+}
 @media screen and (min-width: 200px) and (max-width: 1200px) {
     .card-2{
         display: none;
+    }
+    input{
+        width: 50% !important;
     }
 }
 @media screen and (min-width: 200px) and (max-width: 700px) {
@@ -299,5 +389,54 @@ input[type="date"]:before {
         padding: 0;
         margin: 0;
         margin-left: 20px;
+    }
+}
+
+/* for input  */
+@media  screen and (min-width: 200px) and (max-width: 900px) {
+    input{
+        width: 90% !important;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #input3{
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    #input2{
+        margin-bottom: 0px;
+    }
+    select{
+        width: 90%;
+        margin-top: 20px !important;
+    }
+    textarea{
+        width: 90% !important;
+    }
+    #button2{
+        margin-top: 40px !important;
+    }
+}
+/* for input  */
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+    input{
+        width: 30% !important;
+    }
+    #input4{
+        width: 30%;
+    }
+    #time{
+        width: 30% !important;
+    }
+    textarea{
+        width: 60%;
+        height: 300px;
+    }
+    #button2{
+        margin-left: 60px;
+        margin-top: 0px !important;
+        margin-bottom: 300px;
     }
 }
