@@ -323,23 +323,171 @@ textarea::placeholder{
     width: 20%;
     position: relative;
     height: 270px;
+    /* border: 1px solid black; */
 }
 .images-div{
     width: 50px;
     height: 100px;
+    /* border: 1px solid blue; */
+    margin-left: 40px;
+}
+.i1-bg:hover{
+    background-color: #FD4C82;
+}
+.i2-bg:hover{
+    background-color: #FD4C82;
+}
+.i3-bg:hover{
+    background-color: #FD4C82;
 }
 .images-div img{
     width: 50%;
     border-radius: 50%;
     position: absolute;
     top: 20px;
-    left: 50px;
+    /* left: 50px; */
+    border: 10px solid white;
 }
 .info{
     padding-top: 50px;
+    /* border: 1px solid red; */
 }
 .info:hover{
     background-color: yellow;
+}
+#social{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 50px;
+}
+.main5 h1{
+    color: #FD4C82;
+    font-size: medium;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+.main5 h3{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+.groomers-card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.a{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 300px;
+}
+.a-1 img{
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+.a-2{
+    margin-top: 100px;
+    /* border: 1px solid red; */
+    padding-top: 90px;
+}
+.a-2:hover{
+    background-color: yellow;
+}
+.b{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 300px;
+}
+.b-1 img{
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+.b-2{
+    margin-top: 100px;
+    border: 1px solid red;
+    padding-top: 90px;
+}
+.b-2:hover{
+    background-color: yellow;
+}
+.c{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 300px;
+}
+.c-1 img{
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+.c-2{
+    margin-top: 100px;
+    border: 1px solid red;
+    padding-top: 90px;
+}
+.c-2:hover{
+    background-color: yellow;
+}
+.a{
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 380px;
+}
+.a-2 p{
+    text-align: center;
+}
+#social{
+    text-align: center;
+
+}
+#social1{
+    margin: auto;
+}
+/* .a-1 img{
+    margin-left: 260px;
+    margin-right: auto;
+} */
+.social-apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main6{
+    background: url(images/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#slider-image{
+    width: 40% !important;
+    margin-top: 60px;
+}
+.slider h1{
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+    font-size: medium;
+}
+.slider h3{
+    color: white;
+    padding-top: 30px;
+    text-transform: capitalize;
+    text-align: center;
 }
 @media screen and (min-width: 200px) and (max-width: 1200px) {
     .card-2{
@@ -418,8 +566,12 @@ textarea::placeholder{
     #button2{
         margin-top: 40px !important;
     }
+    #slider-image{
+        width: 70% !important;
+        margin-top: 60px;
+    }
 }
-/* for input  */
+
 @media screen and (min-width: 900px) and (max-width: 1500px) {
     input{
         width: 30% !important;
@@ -440,3 +592,37 @@ textarea::placeholder{
         margin-bottom: 300px;
     }
 }
+/* for input  */
+
+/* for groomers  */
+
+@media screen and (min-width: 690px) and (max-width: 820px) {
+    .groomers-card{
+        flex-direction: column;
+    }
+     .a-1 img{
+    margin-left: 260px;
+    margin-right: auto;
+} 
+}
+
+@media screen and (min-width: 500px) and (max-width: 690px) {
+    .groomers-card{
+        flex-direction: column;
+    }
+     .a-1 img{
+    margin-left: 160px;
+    margin-right: auto;
+} 
+}
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    .groomers-card{
+        flex-direction: column;
+    }
+     .a-1 img{
+    margin-left: 120px;
+    margin-right: auto;
+} 
+}
+
+
