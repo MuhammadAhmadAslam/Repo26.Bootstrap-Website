@@ -483,6 +483,9 @@ textarea::placeholder{
     text-align: center;
     font-size: medium;
 }
+footer{
+    padding-bottom: 70px;
+}
 .slider h3{
     color: white;
     padding-top: 30px;
@@ -490,8 +493,9 @@ textarea::placeholder{
     text-align: center;
 }
 #footer-menu{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 400px;
+    padding-bottom: 70px;
 }
 #right-bracket{
     font-size: 2em;
